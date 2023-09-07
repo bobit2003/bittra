@@ -1,0 +1,203 @@
+.block_hidden.main_block-trading-sessions {
+    opacity: 1;
+}
+
+.block-trading-sessions {
+    padding: 1em 0;
+}
+
+.block-trading-sessions__active {
+    color: #0078ff;
+}
+
+.block-trading-sessions__cells {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5px;
+    justify-content: space-between;
+    font-size: 95%;
+}
+
+.block-trading-sessions__city-time {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: .5em;
+    margin-top: .4em;
+    //margin-left: 60%;
+    font-size: 95%;
+    //padding-right: 1em;
+}
+
+.block-trading-sessions__city-time:last-child {
+    padding-bottom: 0;
+    border-top: 0;
+}
+.block-trading-sessions__city-time i {
+    position: absolute;
+    margin-top: .15em;
+    font-size: 100%;
+    font-weight: 700;
+}
+
+.block-trading-sessions__city-time > div > div:last-child {
+    margin-left: 1.5em;
+}
+
+.block-trading-sessions__clock {
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 0 1em;
+    padding: 1em;
+}
+
+.block-trading-sessions__header.page__header h2 {
+    position: initial;
+}
+
+.block-trading-sessions__help-line {
+    position: absolute;
+    width: 3px;
+    border:none;
+    border-left: 3px dashed #9D0000;
+    height: 478px;
+    opacity: 0.5;
+    margin-top: 0;
+    margin-left: -1px;
+    z-index: 1;
+    animation-name: blinker;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+    animation-duration: 2s;
+}
+
+@keyframes blinker {
+    from { opacity: 0.5; }
+    to { opacity: 0.0; }
+}
+
+.block-trading-sessions__line {
+    position: absolute;
+    width: 3px;
+    height: 478px;
+    background: #9D0000;
+    margin-top: 0;
+    margin-left: -1px;
+    z-index: 1;
+}
+
+.block-trading-sessions__map {
+    display: block;
+    padding-left: 1em;
+}
+.block-trading-sessions__city {
+width: 120px;
+text-align: left;
+}
+
+.block-trading-sessions__name {
+    padding-top: .4em;
+    //position: absolute;
+    width: 27em;
+    padding-left: 1em;
+}
+
+.block-trading-sessions__text.page__description {
+    margin-bottom: 0;
+}
+
+.block-trading-sessions__utc {
+    font-size: 90%;
+    position: absolute;
+    color: #9D0000;
+}
+
+.block-trading-sessions__sessions {
+    position: absolute;
+    height: 1.8em;
+    z-index: 2;
+    opacity: .8;
+    font-size: 80%;
+    color: #fff;
+    padding-top: 6px;
+    display: flex;
+    justify-content: center;
+}
+
+.block-trading-sessions__sessions > div {
+    height: 23px;
+}
+
+.block-trading-sessions__sessions_american {
+    background: #c57f7f;
+}
+
+.block-trading-sessions__sessions_european {
+    background: #2cb363;
+}
+
+.block-trading-sessions__sessions_ocean {
+    background: #0078ff;
+}
+
+.block-trading-sessions__sessions_ocean_last {
+    width: 99px;
+    background: #0078ff;
+}
+
+.block-trading-sessions__sessions_asian_last {
+    width: 33px;
+    background: #9064aa;
+}
+
+.block-trading-sessions__sessions_asian {
+    background: #9064aa;
+}
+.block-trading-sessions__text_left {
+  display: flex;
+  justify-content: space-between;
+  line-height: 24px;
+}
+@media screen and (min-width: 100px) and (max-width: 1150px) {
+.block-trading-sessions__text_left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.block-trading-sessions__city-time {
+  justify-content: space-evenly;
+}
+.block-trading-sessions__text_right {
+    display: flex;
+    flex-direction: column;
+}
+.block-trading-sessions__name {
+  padding-left: 0;
+  width: 20em;
+}
+.block-trading-sessions__city {
+width: 110px;
+}
+@media screen and (max-width: 1440px) {
+.timezone_container{
+  font-size: 16px;
+}
+}
+@media screen and (max-width: 600px) {
+.block-trading-sessions__sessions {
+  height: 1.1rem;
+  padding-top: 2px;
+}
+}
+@media screen and (max-width: 400px) {
+.block-trading-sessions__cells {
+  flex-direction: column;
+}
+.block-trading-sessions__city-time {
+  flex-direction: column;
+  padding-bottom: 0;
+}
+}
